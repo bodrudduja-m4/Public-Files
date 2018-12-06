@@ -14,7 +14,7 @@
    6. Change password for database user **postgres** by command **psql -d template1 -c "ALTER USER postgres WITH PASSWORD 'your_new_password';** 
    7. Log into database by **psql** command if already not logged into postgres.
    8. Create a new database named **postcode_ng** by command **CREATE DATABASE postcode_ng;**
-   9. Create a new database named **postcode_user** by command **CREATE USER postcode_user WITH ENCRYPTED PASSWORD 'replace_your_password_here';**
+   9. Create a new database user named **postcode_user** by command **CREATE USER postcode_user WITH ENCRYPTED PASSWORD 'replace_your_password_here';**
   10. Granting privileges for new user **postcode_user**on **postcode_ng** database by command **GRANT ALL PRIVILEGES ON DATABASE postcode\_ng TO postcode\_user;**
   11. Exit from postgres by issuing command **\q**
   12. Now You can Logout from server
@@ -30,7 +30,7 @@
 	![FTP server](/screenshots/Sprint_4_ftp_archive.png)
 4. Download the latest exe file.
 5. Install **wine** in your machine if not installed to extract the csv file from .exe file. Wine let you run windows executables on Linux
-   #### Commands to install wine in Ubuntu
+   #### Commands to install wine in Ubuntu. In case of problem take help from references and and google :)
    * wget -nc https://dl.winehq.org/wine-builds/Release.key
    * sudo apt-key add Release.key
    * sudo apt-add-repository https://dl.winehq.org/wine-builds/ubuntu/
