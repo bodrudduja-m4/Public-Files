@@ -10,7 +10,8 @@ echo "Enter Dabase user name:"
 read db_user
 export db_user
 echo "Enter password for database user:"
-read db_password
+#read db_passwo
+db_password=$(systemd-ask-password password:)
 export db_password
 echo "Enter Port number:"
 read port
@@ -83,4 +84,5 @@ ALTER TABLE IF EXISTS temp_address RENAME TO address;
 \q
 EOF
 echo "*************End execution**********"
+unset db_password
 exit 0
